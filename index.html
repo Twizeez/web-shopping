@@ -1,0 +1,1315 @@
+<!-- 
+    Nama : Muhammad Hafi
+    NIM : 2211016210023
+    url yang dicopy : https://id.carousell.com/
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousell Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-1">
+                <div class="left">
+                    <div class="logo"><img src="image/carousell-logo.svg" alt=""></div>
+                    <div class="konten">
+                        <div class="left-kon">
+                            <div class="dropdown">
+                                <a href="#" class="dropbtn">Electronics</a>
+                                <div class="dropdown-content">
+                                    <a href="#">Mobile Phone & Tablets</a>
+                                    <a href="#">Computer</a>
+                                    <a href="#">Video Gaming</a>
+                                    <a href="#">TVs & Entertainment Systems</a>
+                                    <a href="#">Audio</a>
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <a href="#" class="dropbtn">Fashion</a>
+                                <div class="dropdown-content">
+                                    <a href="#">Women's Fashion</a>
+                                    <a href="#">Men's Fashion</a>
+                                    <a href="#">Maternity</a>
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <a href="#" class="dropbtn">Personal Care</a>
+                                <div class="dropdown-content">
+                                    <a href="#">Make Up</a>
+                                    <a href="#">Skin, Bath, & Body</a>
+                                    <a href="#">Hair Care</a>
+                                    <a href="#">Men's Grooming</a>
+                                    <a href="#">Perfumes, Nail Care & Others</a>
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <a href="#" class="dropbtn">Kids</a>
+                                <div class="dropdown-content">
+                                    <a href="#">Girl's Apparel</a>
+                                    <a href="#">Boy's Apparel</a>
+                                    <a href="#">Babies Apparel</a>
+                                    <a href="#">Toys</a>
+                                    <a href="#">Strollers, Bouncers & Carriers</a>
+                                    <a href="#">Cots & Cribs</a>
+                                    <a href="#">Nursing & Feeding</a>
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <a href="#" class="dropbtn">Living</a>
+                                <div class="dropdown-content">
+                                    <a href="#">Home & Furniture</a>
+                                    <a href="#">Kitchen & Appliances</a>
+                                    <a href="#">Books & Stationary</a>
+                                    <a href="#">Gardening</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right-kon">
+                            <a href=""><i class='bx bx-category'></i>Categories</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="konten">
+                        <div class="hov"><a href="">Register</a></div>
+                        <div class="hov"><a href="">Login</a></div>
+                        <a href="" class="button"><button>Sell</button></a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <!-- garis -->
+                <hr class="line">
+            </div>
+            <div class="nav-2">
+                <div class="search" style="flex: 8;">
+                    <i class='bx bx-search'></i>
+                    <input placeholder="Search for anything and everything">
+                </div>
+                <div class="search" style="flex:2;">
+                    <i class='bx bx-map'></i>
+                    <input placeholder="Indonesia">
+                </div>
+                <div class="search" style="flex:1;">
+                    <select name="" id="km">
+                        <option value="">0.5 Km</option>
+                        <option value="">1 Km</option>
+                        <option value="">2.5 Km</option>
+                        <option value="">5 Km</option>
+                        <option value="">10 Km</option>
+                        <option value="">25 Km</option>
+                        <option value="">50 Km</option>
+                        <option value="">100 Km</option>
+                    </select>
+                </div>
+                <div class="search" style="flex:1;">
+                    <div style="display: flex; flex: 1; background-color: #e0e0e0;">
+                        <button style="flex: 1; width: 90%; height: auto;">Search</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <!-- garis -->
+                <hr class="line">
+            </div>
+        </div>
+    </header>
+    <div>
+        <section class="iklan" style="min-width: 1200px;">
+            <div style="width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;">
+                <div style="display: flex; max-width: 1200px;">
+                    <div class="image">
+                        <a href=""><img src="image/iklan-1.png" alt="">
+                        </a>
+                    </div>
+                    <div class="image">
+                        <a href=""><img src="image/iklan-2.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="explore" style="min-width: 1200px;">
+            <div class="judul">
+                <div class="first" style="padding: 5px;">
+                    <h3>Explore Carousell</h3>
+                </div>
+            </div>
+            <div class="pilihan">
+                <button id="prev-slide" class="slide-button">
+                    <i class='bx bx-chevron-left'></i>
+                </button>
+                
+                <div class="foto">
+                    <div class="menu">
+                        <a href="#">
+                            <div class="divimg"><img src="image/following.png" alt=""></div>
+                            <div>
+                                <p>Following</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="menu">
+                        <a href="#">
+                            <div class="divimg"><img src="image/women fashion.png" alt=""></div>
+                            <div>
+                                <p>Women's Fashion</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="menu">
+                        <a href="#">
+                            <div class="divimg"><img src="image/mens fashion.png" alt=""></div>
+                            <div>
+                                <p>Men's Fashion</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="menu">
+                        <a href="#">
+                            <div class="divimg"><img src="image/health & beauty.png" alt=""></div>
+                            <div>
+                                <p>Health & Beauty</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="menu">
+                        <a href="#">
+                            <div class="divimg"><img src="image/electronics.png" alt=""></div>
+                            <div>
+                                <p>Electronics</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="menu">
+                        <a href="#">
+                            <div class="divimg"><img src="image/mobile & tablets.png" alt=""></div>
+                            <div>
+                                <p>Mobile Phone & Tablets</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="menu">
+                        <a href="#">
+                            <div class="divimg"><img src="image/books & stationery.png" alt=""></div>
+                            <div>
+                                <p>Books & Stationery</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="menu">
+                        <a href="#">
+                            <div class="divimg"><img src="image/babies.png" alt=""></div>
+                            <div>
+                                <p>Babies & Kids</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="menu">
+                        <a href="#">
+                            <div class="divimg"><img src="image/olshop.png" alt=""></div>
+                            <div>
+                                <p>Olshop Fashion</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="menu">
+                        <a href="#">
+                            <div class="divimg"><img src="image/lucxury.png" alt=""></div>
+                            <div>
+                                <p>Luxury</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="menu">
+                        <a href="#">
+                            <div class="divimg"><img src="image/photography.png" alt=""></div>
+                            <div>
+                                <p>Photography</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="menu">
+                        <a href="#">
+                            <div class="divimg"><img src="image/video gaming.png" alt=""></div>
+                            <div>
+                                <p>Video Gaming</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="menu">
+                        <a href="#">
+                            <div class="divimg"><img src="image/food & drinks.png" alt=""></div>
+                            <div>
+                                <p>Food & Drinks</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="menu">
+                        <a href="#">
+                            <div class="divimg"><img src="image/design & craft.png" alt=""></div>
+                            <div>
+                                <p>Design & Craft</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="menu">
+                        <a href="#">
+                            <div class="divimg"><img src="image/sports.png" alt=""></div>
+                            <div>
+                                <p>Sports</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="menu">
+                        <a href="#">
+                            <div class="divimg"><img src="image/toys.png" alt=""></div>
+                            <div>
+                                <p>Toys & Collectibles</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="menu">
+                        <a href="#">
+                            <div class="divimg"><img src="image/antique.png" alt=""></div>
+                            <div>
+                                <p>Antique</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="menu">
+                        <a href="#">
+                            <div class="divimg"><img src="image/music.png" alt=""></div>
+                            <div>
+                                <p>Music & Media</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="menu">
+                        <a href="#">
+                            <div class="divimg"><img src="image/motorbikes.png" alt=""></div>
+                            <div>
+                                <p>Motorbikes</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="menu">
+                        <a href="#">
+                            <div class="divimg"><img src="image/car.png" alt=""></div>
+                            <div>
+                                <p>Car</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="menu">
+                        <a href="#">
+                            <div class="divimg"><img src="image/auto acc.png" alt=""></div>
+                            <div>
+                                <p>Auto Accessories</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="menu">
+                        <a href="#">
+                            <div class="divimg"><img src="image/prop.png" alt=""></div>
+                            <div>
+                                <p>Property</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="menu">
+                        <a href="#">
+                            <div class="divimg"><img src="image/services.png" alt=""></div>
+                            <div>
+                                <p>Services</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="menu">
+                        <a href="#">
+                            <div class="divimg"><img src="image/jobs.png" alt=""></div>
+                            <div>
+                                <p>Jobs</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="menu">
+                        <a href="#">
+                            <div class="divimg"><img src="image/home fur.png" alt=""></div>
+                            <div>
+                                <p>Home & Furniture</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="menu">
+                        <a href="#">
+                            <div class="divimg"><img src="image/gardening.png" alt=""></div>
+                            <div>
+                                <p>Gardening</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="menu">
+                        <a href="#">
+                            <div class="divimg"><img src="image/kitchen.png" alt=""></div>
+                            <div>
+                                <p>Kitchen & Appliances</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="menu">
+                        <a href="#">
+                            <div class="divimg"><img src="image/pet supp.png" alt=""></div>
+                            <div>
+                                <p>Pett Supplies</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="menu">
+                        <a href="#">
+                            <div class="divimg"><img src="image/j-pop.png" alt=""></div>
+                            <div>
+                                <p>J-Pop</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="menu">
+                        <a href="#">
+                            <div class="divimg"><img src="image/k-wave.png" alt=""></div>
+                            <div>
+                                <p>K-Wave</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="menu">
+                        <a href="#">
+                            <div class="divimg"><img src="image/ticket.png" alt=""></div>
+                            <div>
+                                <p>Ticket & Vouchers</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="menu">
+                        <a href="#">
+                            <div class="divimg"><img src="image/community.png" alt=""></div>
+                            <div>
+                                <p>Community</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="menu">
+                        <a href="#">
+                            <div class="divimg"><img src="image/looking.png" alt=""></div>
+                            <div>
+                                <p>Looking For</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="menu">
+                        <a href="#">
+                            <div class="divimg"><img src="image/everything else.png" alt=""></div>
+                            <div>
+                                <p>Everything Else</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <button id="next-slide" class="slide-button">
+                    <i class='bx bx-chevron-right'></i>
+                </button>
+            </div>
+    </div>
+    </div>
+    </section>
+    <section class="recommended">
+        <div class="recommend">
+            <div class="judul">
+                <div>
+                    <h4>Recommended For You</h4>
+                </div>
+            </div>
+
+            <div class="produk">
+                <div class="border">
+                    <div class="prod">
+                        <div class="item">
+                            <a class="atas">
+                                <div style="flex: 1;">
+                                    <img src="image/user1.jpg" alt="">
+                                </div>
+                                <div style="flex: 5;">
+                                    <div>
+                                        <p class="user">User435</p>
+                                    </div>
+                                    <div>
+                                        <p class="up-date">2 days ago</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="bawah" href="#">
+                                <div class="image">
+                                    <img src="image/prod1.jpg" alt="">
+                                </div>
+                                <p class="barang">
+                                    Kaos Zara
+                                </p>
+                                <div class="harga">
+                                    Rp 40,000
+                                </div>
+                                <p class="ket">
+                                    Size : S
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="like" style="height: 30px; display: flex;">
+                        <a href="" style="flex: 1; margin: auto; padding-left: 10px">
+                            <div><i style="scale: 125%;" class='bx bx-heart'></i></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="border">
+                    <div class="prod">
+                        <div class="item">
+                            <a class="atas">
+                                <div style="flex: 1;">
+                                    <img src="image/user2.jpg" alt="">
+                                </div>
+                                <div style="flex: 5;">
+                                    <div>
+                                        <p class="user">Toko Sepatu</p>
+                                    </div>
+                                    <div>
+                                        <p class="up-date">1 week ago</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="bawah" href="#">
+                                <div class="image">
+                                    <img src="image/prod2.jpg" alt="">
+                                </div>
+                                <p class="barang">
+                                    Nike Super Mario Sneaker Shoes
+                                </p>
+                                <div class="harga">
+                                    Rp 380,000
+                                </div>
+                                <p class="ket">
+                                    Size : EU 41 / UK 7 / US 8
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="like" style="height: 30px; display: flex;">
+                        <a href="" style="flex: 1; margin: auto; padding-left: 10px">
+                            <div><i style="scale: 125%;" class='bx bx-heart'></i></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="border">
+                    <div class="prod">
+                        <div class="item">
+                            <a class="atas">
+                                <div style="flex: 1;">
+                                    <img src="image/user3.jpg" alt="">
+                                </div>
+                                <div style="flex: 5;">
+                                    <div>
+                                        <p class="user">Womens Top</p>
+                                    </div>
+                                    <div>
+                                        <p class="up-date">3 days ago</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="bawah" href="#">
+                                <div class="image">
+                                    <img src="image/prod3.jpg" alt="">
+                                </div>
+                                <p class="barang">
+                                    Mididress cotton on
+                                </p>
+                                <div class="harga">
+                                    Rp 40,000
+                                </div>
+                                <p class="ket">
+                                    Size : M
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="like" style="height: 30px; display: flex;">
+                        <a href="" style="flex: 1; margin: auto; padding-left: 10px">
+                            <div><i style="scale: 125%;" class='bx bx-heart'></i></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="border">
+                    <div class="prod">
+                        <div class="item">
+                            <a class="atas">
+                                <div style="flex: 1;">
+                                    <img src="image/user4.jpg" alt="">
+                                </div>
+                                <div style="flex: 5;">
+                                    <div>
+                                        <p class="user">Toys Collect</p>
+                                    </div>
+                                    <div>
+                                        <p class="up-date">5 days ago</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="bawah" href="#">
+                                <div class="image">
+                                    <img src="image/prod4.jpg" alt="">
+                                </div>
+                                <p class="barang">
+                                    Lego Ninjago
+                                </p>
+                                <div class="harga">
+                                    Rp 720,000
+                                </div>
+                                <p class="ket">
+                                    Like new
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="like" style="height: 30px; display: flex;">
+                        <a href="" style="flex: 1; margin: auto; padding-left: 10px">
+                            <div><i style="scale: 125%;" class='bx bx-heart'></i></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="border">
+                    <div class="prod">
+                        <div class="item">
+                            <a class="atas">
+                                <div style="flex: 1;">
+                                    <img src="image/user5.jpg" alt="">
+                                </div>
+                                <div style="flex: 5;">
+                                    <div>
+                                        <p class="user">acc shop</p>
+                                    </div>
+                                    <div>
+                                        <p class="up-date">2 days ago</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="bawah" href="#">
+                                <div class="image">
+                                    <img src="image/prod5.jpg" alt="">
+                                </div>
+                                <p class="barang">
+                                    gantungan Kunci Mobil
+                                </p>
+                                <div class="harga">
+                                    Rp 40,000
+                                </div>
+                                <p class="ket">
+                                    Well Used
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="like" style="height: 30px; display: flex;">
+                        <a href="" style="flex: 1; margin: auto; padding-left: 10px">
+                            <div><i style="scale: 125%;" class='bx bx-heart'></i></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="border">
+                    <div class="prod">
+                        <div class="item">
+                            <a class="atas">
+                                <div style="flex: 1;">
+                                    <img src="image/user6.jpg" alt="">
+                                </div>
+                                <div style="flex: 5;">
+                                    <div>
+                                        <p class="user">DioPaz</p>
+                                    </div>
+                                    <div>
+                                        <p class="up-date">4 days ago</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="bawah" href="#">
+                                <div class="image">
+                                    <img src="image/prod6.jpg" alt="">
+                                </div>
+                                <p class="barang">
+                                    Uniqlo Wide Cargo
+                                </p>
+                                <div class="harga">
+                                    Rp 277,000
+                                </div>
+                                <p class="ket">
+                                    Like New
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="like" style="height: 30px; display: flex;">
+                        <a href="" style="flex: 1; margin: auto; padding-left: 10px">
+                            <div><i style="scale: 125%;" class='bx bx-heart'></i></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="border">
+                    <div class="prod">
+                        <div class="item">
+                            <a class="atas">
+                                <div style="flex: 1;">
+                                    <img src="image/user7.jpg" alt="">
+                                </div>
+                                <div style="flex: 5;">
+                                    <div>
+                                        <p class="user">Jaket BJB</p>
+                                    </div>
+                                    <div>
+                                        <p class="up-date">1 days ago</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="bawah" href="#">
+                                <div class="image">
+                                    <img src="image/prod7.jpg" alt="">
+                                </div>
+                                <p class="barang">
+                                    Jaket Baseball / Varsity
+                                </p>
+                                <div class="harga">
+                                    Rp 100,000
+                                </div>
+                                <p class="ket">
+                                    Like New
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="like" style="height: 30px; display: flex;">
+                        <a href="" style="flex: 1; margin: auto; padding-left: 10px">
+                            <div><i style="scale: 125%;" class='bx bx-heart'></i></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="border">
+                    <div class="prod">
+                        <div class="item">
+                            <a class="atas">
+                                <div style="flex: 1;">
+                                    <img src="image/user8.jpg" alt="">
+                                </div>
+                                <div style="flex: 5;">
+                                    <div>
+                                        <p class="user">HP CELL</p>
+                                    </div>
+                                    <div>
+                                        <p class="up-date">2 days ago</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="bawah" href="#">
+                                <div class="image">
+                                    <img src="image/prod8.jpg" alt="">
+                                </div>
+                                <p class="barang">
+                                    One Plus 12 12/256
+                                </p>
+                                <div class="harga">
+                                    Rp 12,350,000
+                                </div>
+                                <p class="ket">
+                                    Like New
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="like" style="height: 30px; display: flex;">
+                        <a href="" style="flex: 1; margin: auto; padding-left: 10px">
+                            <div><i style="scale: 125%;" class='bx bx-heart'></i></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="border">
+                    <div class="prod">
+                        <div class="item">
+                            <a class="atas">
+                                <div style="flex: 1;">
+                                    <img src="image/user9.jpg" alt="">
+                                </div>
+                                <div style="flex: 5;">
+                                    <div>
+                                        <p class="user">Udin123</p>
+                                    </div>
+                                    <div>
+                                        <p class="up-date">2 weeks ago</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="bawah" href="#">
+                                <div class="image">
+                                    <img src="image/prod9.jpg" alt="">
+                                </div>
+                                <p class="barang">
+                                    Huawei Nova 2i 4/64
+                                </p>
+                                <div class="harga">
+                                    Rp 545,000
+                                </div>
+                                <p class="ket">
+                                    Lightly Used
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="like" style="height: 30px; display: flex;">
+                        <a href="" style="flex: 1; margin: auto; padding-left: 10px">
+                            <div><i style="scale: 125%;" class='bx bx-heart'></i></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="border">
+                    <div class="prod">
+                        <div class="item">
+                            <a class="atas">
+                                <div style="flex: 1;">
+                                    <img src="image/user10.jpg" alt="">
+                                </div>
+                                <div style="flex: 5;">
+                                    <div>
+                                        <p class="user">Thrift Nusa</p>
+                                    </div>
+                                    <div>
+                                        <p class="up-date">1 days ago</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="bawah" href="#">
+                                <div class="image">
+                                    <img src="image/prod10.jpg" alt="">
+                                </div>
+                                <p class="barang">
+                                    Jaket Varsity Merah
+                                </p>
+                                <div class="harga">
+                                    Rp 180,000
+                                </div>
+                                <p class="ket">
+                                    Like New
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="like" style="height: 30px; display: flex;">
+                        <a href="" style="flex: 1; margin: auto; padding-left: 10px">
+                            <div><i style="scale: 125%;" class='bx bx-heart'></i></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="border">
+                    <div class="prod">
+                        <div class="item">
+                            <a class="atas">
+                                <div style="flex: 1;">
+                                    <img src="image/user11.jpg" alt="">
+                                </div>
+                                <div style="flex: 5;">
+                                    <div>
+                                        <p class="user">reksadi</p>
+                                    </div>
+                                    <div>
+                                        <p class="up-date">1 days ago</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="bawah" href="#">
+                                <div class="image">
+                                    <img src="image/prod11.jpg" alt="">
+                                </div>
+                                <p class="barang">
+                                    T-shirt American Baseball
+                                </p>
+                                <div class="harga">
+                                    Rp 75,000
+                                </div>
+                                <p class="ket">
+                                    Well Used
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="like" style="height: 30px; display: flex;">
+                        <a href="" style="flex: 1; margin: auto; padding-left: 10px">
+                            <div><i style="scale: 125%;" class='bx bx-heart'></i></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="border">
+                    <div class="prod">
+                        <div class="item">
+                            <a class="atas">
+                                <div style="flex: 1;">
+                                    <img src="image/user12.jpg" alt="">
+                                </div>
+                                <div style="flex: 5;">
+                                    <div>
+                                        <p class="user">User009</p>
+                                    </div>
+                                    <div>
+                                        <p class="up-date">2 days ago</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="bawah" href="#">
+                                <div class="image">
+                                    <img src="image/prod12.jpg" alt="">
+                                </div>
+                                <p class="barang">
+                                    Poco X5 PRO 5G 6/128
+                                </p>
+                                <div class="harga">
+                                    Rp 2,950,000
+                                </div>
+                                <p class="ket">
+                                    Lightly Used
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="like" style="height: 30px; display: flex;">
+                        <a href="" style="flex: 1; margin: auto; padding-left: 10px">
+                            <div><i style="scale: 125%;" class='bx bx-heart'></i></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="view">
+                <button>View More</button>
+            </div>
+
+            <div class="qrcode">
+                <div class="qr">
+                    <div class="tengah">
+                        <div class="image"><img src="image/carousell_qrcode.png" alt="QRCODE"></div>
+                        <div class="info">
+                            <h5>Everyone Wins on Carousell</h5>
+                            <p>Unlock exclusive features when you download the Carousell app today!</p>
+                            <div class="logo">
+                                <div class="logo-1">
+                                    <a href="#"><img src="image/appstore.svg" alt=""></a>
+                                    <a href="#"><img src="image/gplay.svg" alt=""></a>
+                                </div>
+                                <div class="logo-2">
+                                    <img src="image/carousell_qrcode_branch.webp" alt="QRCODE">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="garis">
+        <hr>
+    </div>
+    <footer class="footer">
+        <div class="top-search">
+            <p class="judul">Top Searches</p>
+            <div class="list-item" id="list">
+                <div class="listitem">
+                    <a href="#">
+                        <p class="top-barang">uniqlo</p>
+                    </a>
+                </div>
+                <p class="top-garis">|</p>
+                <div class="listitem">
+                    <a href="#">
+                        <p class="top-barang">compression shirt</p>
+                    </a>
+                </div>
+                <p class="top-garis">|</p>
+                <div class="listitem">
+                    <a href="#">
+                        <p class="top-barang">snekers</p>
+                    </a>
+                </div>
+                <p class="top-garis">|</p>
+                <div class="listitem">
+                    <a href="#">
+                        <p class="top-barang">car accessories</p>
+                    </a>
+                </div>
+                <p class="top-garis">|</p>
+                <div class="listitem">
+                    <a href="#">
+                        <p class="top-barang">long dress</p>
+                    </a>
+                </div>
+                <p class="top-garis">|</p>
+                <div class="listitem">
+                    <a href="#">
+                        <p class="top-barang">short pants</p>
+                    </a>
+                </div>
+                <p class="top-garis">|</p>
+                <div class="listitem">
+                    <a href="#">
+                        <p class="top-barang">smart watch</p>
+                    </a>
+                </div>
+                <p class="top-garis">|</p>
+                <div class="listitem">
+                    <a href="#">
+                        <p class="top-barang">school uniform</p>
+                    </a>
+                </div>
+                <p class="top-garis">|</p>
+                <div class="listitem">
+                    <a href="#">
+                        <p class="top-barang">samsung</p>
+                    </a>
+                </div>
+                <p class="top-garis">|</p>
+                <div class="listitem">
+                    <a href="#">
+                        <p class="top-barang">huawei</p>
+                    </a>
+                </div>
+                <p class="top-garis">|</p>
+                <div class="listitem">
+                    <a href="#">
+                        <p class="top-barang">xiaomi</p>
+                    </a>
+                </div>
+                <p class="top-garis">|</p>
+                <div class="listitem">
+                    <a href="#">
+                        <p class="top-barang">oppo</p>
+                    </a>
+                </div>
+                <p class="top-garis">|</p>
+                <div class="listitem">
+                    <a href="#">
+                        <p class="top-barang">vivo</p>
+                    </a>
+                </div>
+                <p class="top-garis">|</p>
+                <div class="listitem">
+                    <a href="#">
+                        <p class="top-barang">iphone</p>
+                    </a>
+                </div>
+                <p class="top-garis">|</p>
+                <div class="listitem">
+                    <a href="#">
+                        <p class="top-barang">laptop</p>
+                    </a>
+                </div>
+                <p class="top-garis">|</p>
+                <div class="listitem">
+                    <a href="#">
+                        <p class="top-barang">processor</p>
+                    </a>
+                </div>
+                <p class="top-garis">|</p>
+                <div class="listitem">
+                    <a href="#">
+                        <p class="top-barang">video graphic adapter</p>
+                    </a>
+                </div>
+                <p class="top-garis">|</p>
+                <div class="listitem">
+                    <a href="#">
+                        <p class="top-barang">rexus</p>
+                    </a>
+                </div>
+                <p class="top-garis">|</p>
+                <div class="listitem">
+                    <a href="#">
+                        <p class="top-barang">fan portabel</p>
+                    </a>
+                </div>
+                <p class="top-garis">|</p>
+                <div class="listitem">
+                    <a href="#">
+                        <p class="top-barang">tv</p>
+                    </a>
+                </div>
+                <p class="top-garis">|</p>
+                <div class="listitem">
+                    <a href="#">
+                        <p class="top-barang">phone case</p>
+                    </a>
+                </div>
+                <p class="top-garis">|</p>
+                <div class="listitem">
+                    <a href="#">
+                        <p class="top-barang">nike air jordan</p>
+                    </a>
+                </div>
+                <p class="top-garis">|</p>
+                <div class="listitem">
+                    <a href="#">
+                        <p class="top-barang">vacuum cleaner</p>
+                    </a>
+                </div>
+                <p class="top-garis">|</p>
+                <div class="listitem">
+                    <a href="#">
+                        <p class="top-barang">face mask</p>
+                    </a>
+                </div>
+                <p class="top-garis">|</p>
+                <div class="listitem">
+                    <a href="#">
+                        <p class="top-barang">workout shirt</p>
+                    </a>
+                </div>
+                <p class="top-garis">|</p>
+                <div class="listitem">
+                    <a href="#">
+                        <p class="top-barang">skincare</p>
+                    </a>
+                </div>
+                <p class="top-garis">|</p>
+                <div class="listitem">
+                    <a href="#">
+                        <p class="top-barang">sun screen</p>
+                    </a>
+                </div>
+                <p class="top-garis">|</p>
+                <div class="listitem">
+                    <a href="#">
+                        <p class="top-barang">hand body</p>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <!-- garis -->
+                <hr style="margin-top: 30px; border-top:1px solid rgb(206, 206, 206);">
+            </div>
+        </div>
+        <div class="items">
+            <div class="barang">
+                <p class="judul">Cars & Property</p>
+                <div class="isi">
+                    <div class="isi-barang"><a class="isian" href="#">mobil</a></div>
+                    <p class="pembatas isian">&nbsp;•&nbsp;</p>
+                    <div class="isi-barang"><a class="isian" href="#">mobil untuk dijual</a></div>
+                    <p class="pembatas isian">&nbsp;•&nbsp;</p>
+                    <div class="isi-barang"><a class="isian" href="#">rental kendaraan</a></div>
+                    <p class="pembatas isian">&nbsp;•&nbsp;</p>
+                    <div class="isi-barang"><a class="isian" href="#">aksesoris mobil</a></div>
+                    <p class="pembatas isian">&nbsp;•&nbsp;</p>
+                    <div class="isi-barang"><a class="isian" href="#">motor</a></div>
+                    <p class="pembatas isian">&nbsp;•&nbsp;</p>
+                    <div class="isi-barang"><a class="isian" href="#">sepeda</a></div>
+                    <p class="pembatas isian">&nbsp;•&nbsp;</p>
+                    <div class="isi-barang"><a class="isian" href="#">properti</a></div>
+                    <p class="pembatas isian">&nbsp;•&nbsp;</p>
+                    <div class="isi-barang"><a class="isian" href="#">dijual</a></div>
+                    <p class="pembatas isian">&nbsp;•&nbsp;</p>
+                    <div class="isi-barang"><a class="isian" href="#">properti lainnya</a></div>
+                </div>
+            </div>
+            <div class="barang">
+                <p class="judul">Fashion</p>
+                <div class="isi">
+                    <div class="isi-barang"><a class="isian" href="#">fashion pria</a></div>
+                    <p class="pembatas isian">&nbsp;•&nbsp;</p>
+                    <div class="isi-barang"><a class="isian" href="#">fashion wanita</a></div>
+                    <p class="pembatas isian">&nbsp;•&nbsp;</p>
+                    <div class="isi-barang"><a class="isian" href="#">jam tangan pria</a></div>
+                    <p class="pembatas isian">&nbsp;•&nbsp;</p>
+                    <div class="isi-barang"><a class="isian" href="#">tas & dompet wanita</a></div>
+                    <p class="pembatas isian">&nbsp;•&nbsp;</p>
+                    <div class="isi-barang"><a class="isian" href="#">kesehatan & kecantikan</a></div>
+                    <p class="pembatas isian">&nbsp;•&nbsp;</p>
+                    <div class="isi-barang"><a class="isian" href="#">rias wajah</a></div>
+                    <p class="pembatas isian">&nbsp;•&nbsp;</p>
+                    <div class="isi-barang"><a class="isian" href="#">kulit, wajah & tubuh</a></div>
+                    <p class="pembatas isian">&nbsp;•&nbsp;</p>
+                    <div class="isi-barang"><a class="isian" href="#">barang mewah</a></div>
+
+                </div>
+            </div>
+            <div class="barang">
+                <p class="judul">Home & Living</p>
+                <div class="isi">
+                    <div class="isi-barang"><a class="isian" href="#">perabotan rumah</a></div>
+                    <p class="pembatas isian">&nbsp;•&nbsp;</p>
+                    <div class="isi-barang"><a class="isian" href="#">gardening</a></div>
+                    <p class="pembatas isian">&nbsp;•&nbsp;</p>
+                    <div class="isi-barang"><a class="isian" href="#">buku & alat tulis</a></div>
+                    <p class="pembatas isian">&nbsp;•&nbsp;</p>
+                    <div class="isi-barang"><a class="isian" href="#">buku anak-anak</a></div>
+                    <p class="pembatas isian">&nbsp;•&nbsp;</p>
+                    <div class="isi-barang"><a class="isian" href="#">bayi & anak</a></div>
+                    <p class="pembatas isian">&nbsp;•&nbsp;</p>
+                    <div class="isi-barang"><a class="isian" href="#">baju anak perempuan</a></div>
+                    <p class="pembatas isian">&nbsp;•&nbsp;</p>
+                    <div class="isi-barang"><a class="isian" href="#">baju anak laki-laki</a></div>
+                    <p class="pembatas isian">&nbsp;•&nbsp;</p>
+                    <div class="isi-barang"><a class="isian" href="#">kehamilan</a></div>
+                    <p class="pembatas isian">&nbsp;•&nbsp;</p>
+                    <div class="isi-barang"><a class="isian" href="#">kereta, kursi goyang& gendongan</a></div>
+                    <p class="pembatas isian">&nbsp;•&nbsp;</p>
+                    <div class="isi-barang"><a class="isian" href="#">perlengkapan dapur</a></div>
+                </div>
+            </div>
+            <div class="barang">
+                <p class="judul">Mobiles & Electronics</p>
+                <div class="isi">
+                    <div class="isi-barang"><a class="isian" href="#">telepon seluler & tablet</a></div>
+                    <p class="pembatas isian">&nbsp;•&nbsp;</p>
+                    <div class="isi-barang"><a class="isian" href="#">elektronik</a></div>
+                    <p class="pembatas isian">&nbsp;•&nbsp;</p>
+                    <div class="isi-barang"><a class="isian" href="#">iphone</a></div>
+                    <p class="pembatas isian">&nbsp;•&nbsp;</p>
+                    <div class="isi-barang"><a class="isian" href="#">ponsel android</a></div>
+                    <p class="pembatas isian">&nbsp;•&nbsp;</p>
+                    <div class="isi-barang"><a class="isian" href="#">tablet</a></div>
+                    <p class="pembatas isian">&nbsp;•&nbsp;</p>
+                    <div class="isi-barang"><a class="isian" href="#">casing & sarung</a></div>
+                    <p class="pembatas isian">&nbsp;•&nbsp;</p>
+                    <div class="isi-barang"><a class="isian" href="#">power banks & chargers</a></div>
+                    <p class="pembatas isian">&nbsp;•&nbsp;</p>
+                    <div class="isi-barang"><a class="isian" href="#">audio</a></div>
+                    <p class="pembatas isian">&nbsp;•&nbsp;</p>
+                    <div class="isi-barang"><a class="isian" href="#">tvs & entertainments</a></div>
+                    <p class="pembatas isian">&nbsp;•&nbsp;</p>
+                    <div class="isi-barang"><a class="isian" href="#">desktops</a></div>
+                </div>
+            </div>
+            <div class="barang">
+                <p class="judul">Hobbies & Games</p>
+                <div class="isi">
+                    <div class="isi-barang"><a class="isian" href="#">fotografi</a></div>
+                    <p class="pembatas isian">&nbsp;•&nbsp;</p>
+                    <div class="isi-barang"><a class="isian" href="#">aksesoris</a></div>
+                    <p class="pembatas isian">&nbsp;•&nbsp;</p>
+                    <div class="isi-barang"><a class="isian" href="#">musik & media</a></div>
+                    <p class="pembatas isian">&nbsp;•&nbsp;</p>
+                    <div class="isi-barang"><a class="isian" href="#">ticket & voucher</a></div>
+                    <p class="pembatas isian">&nbsp;•&nbsp;</p>
+                    <div class="isi-barang"><a class="isian" href="#">mainan</a></div>
+                    <p class="pembatas isian">&nbsp;•&nbsp;</p>
+                    <div class="isi-barang"><a class="isian" href="#">antik</a></div>
+                    <p class="pembatas isian">&nbsp;•&nbsp;</p>
+                    <div class="isi-barang"><a class="isian" href="#">perlengkapan hewan</a></div>
+                    <p class="pembatas isian">&nbsp;•&nbsp;</p>
+                    <div class="isi-barang"><a class="isian" href="#">design & kerajinan tangan</a></div>
+                    <p class="pembatas isian">&nbsp;•&nbsp;</p>
+                    <div class="isi-barang"><a class="isian" href="#">makanan & minuman</a></div>
+                    <p class="pembatas isian">&nbsp;•&nbsp;</p>
+                    <div class="isi-barang"><a class="isian" href="#">olahraga</a></div>
+                </div>
+            </div>
+            <div class="barang">
+                <p class="judul">Jobs & Services</p>
+                <div class="isi">
+                    <div class="isi-barang"><a class="isian" href="#">servis</a></div>
+                    <p class="pembatas isian">&nbsp;•&nbsp;</p>
+                    <div class="isi-barang"><a class="isian" href="#">jasa servis di rumah</a></div>
+                    <p class="pembatas isian">&nbsp;•&nbsp;</p>
+                    <div class="isi-barang"><a class="isian" href="#">perbaikan elektronik & gadget</a></div>
+                    <p class="pembatas isian">&nbsp;•&nbsp;</p>
+                    <div class="isi-barang"><a class="isian" href="#">kursus dan bimbingan belajar</a></div>
+                    <p class="pembatas isian">&nbsp;•&nbsp;</p>
+                    <div class="isi-barang"><a class="isian" href="#">beauty servis</a></div>
+                    <p class="pembatas isian">&nbsp;•&nbsp;</p>
+                    <div class="isi-barang"><a class="isian" href="#">pekerjaan</a></div>
+                    <p class="pembatas isian">&nbsp;•&nbsp;</p>
+                    <div class="isi-barang"><a class="isian" href="#">full-time</a></div>
+                    <p class="pembatas isian">&nbsp;•&nbsp;</p>
+                    <div class="isi-barang"><a class="isian" href="#">part-time</a></div>
+                    <p class="pembatas isian">&nbsp;•&nbsp;</p>
+                    <div class="isi-barang"><a class="isian" href="#">magang & lainnya</a></div>
+                    <p class="pembatas isian">&nbsp;•&nbsp;</p>
+                    <div class="isi-barang"><a class="isian" href="#">servis lainnya</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="batas">
+            <hr style="border-top:1px solid rgb(206, 206, 206);">
+        </div>
+        <div class="bawah">
+            <div class="isi">
+                <div class="logo"><img src="image/Carousell-logo-square.png" alt=""></div>
+                <p style="font-size: 12px; padding-right: 35px; color: rgb(87, 88, 90);">© 2024 Carousell</p>
+                <div class="help" style="display: flex;">
+                    <a class="help" href="#">
+                        <p>Help Centre</p>
+                    </a>
+                    <p>&nbsp;•&nbsp;</p>
+                    <a class="help" href="#">
+                        <p>Contact Us</p>
+                    </a>
+                    <p>&nbsp;•&nbsp;</p>
+                    <a class="help" href="#">
+                        <p>Press</p>
+                    </a>
+                    <p>&nbsp;•&nbsp;</p>
+                    <a class="help" href="#">
+                        <p>Sustainability</p>
+                    </a>
+                    <p>&nbsp;•&nbsp;</p>
+                    <a class="help" href="#">
+                        <p>Jobs</p>
+                    </a>
+                    <p>&nbsp;•&nbsp;</p>
+                    <a class="help" href="#">
+                        <p>Advertise with Us</p>
+                    </a>
+                    <p>&nbsp;•&nbsp;</p>
+                    <a class="help" href="#">
+                        <p>Terms</p>
+                    </a>
+                    <p>&nbsp;•&nbsp;</p>
+                    <a class="help" href="#">
+                        <p>Privacy</p>
+                    </a>
+                </div>
+            </div>
+            <div class="isi">
+                <div><a href=""><img class="flag" src="image/flag1.webp" alt=""></a></div>
+                <div><a href=""><img class="flag" src="image/flag2.webp" alt=""></a></div>
+                <div><a href=""><img class="flag" src="image/flag3.webp" alt=""></a></div>
+                <div><a href=""><img class="flag" src="image/flag4.webp" alt=""></a></div>
+                <div><a href=""><img class="flag" src="image/flag5.webp" alt=""></a></div>
+                <div><a href=""><img class="flag" src="image/flag6.webp" alt=""></a></div>
+                <div><a href=""><img class="flag" src="image/flag7.webp" alt=""></a></div>
+                <div><a href=""><img class="flag" src="image/flag8.webp" alt=""></a></div>
+                <div class="dropdown">
+                    <select name="subject" id="subject">
+                        <option value="" selected="selected">English</option>
+                        <option value="" selected="selected">Chinese</option>
+                        <option value="" selected="selected">Indonesia</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/67dd9d9d63.js" crossorigin="anonymous"></script>
+    <script src="java.js" defer></script>
+</body>
+
+</html>
